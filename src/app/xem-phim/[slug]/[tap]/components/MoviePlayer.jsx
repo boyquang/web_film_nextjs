@@ -23,8 +23,8 @@ const VideoPlayer = ({ episode }) => {
           {episode.name}
         </strong>
       </div>
-       {/* <ReactPlayer url={episode.link_m3u8} controls width="100%" height="500px" />  */}
-     <iframe
+       <ReactPlayer url={episode.link_m3u8} controls width="100%" height="500px" />
+     {/* <iframe
         className="video-iframe rounded"
         title={episode.filename || "Video"}
         src={'https://play.vnn69.com?url=${episode.link_m3u8}'}
@@ -32,7 +32,7 @@ const VideoPlayer = ({ episode }) => {
         height="500px"
         frameBorder="0"
         allowFullScreen
-      ></iframe>
+      ></iframe>  */}
     </div>
   );
 };
@@ -155,6 +155,7 @@ const MoviePlayer = ({ initialData, params }) => {
 };
 
 export default MoviePlayer;
+
 
 
 
