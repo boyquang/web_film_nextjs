@@ -80,7 +80,7 @@ const AppHeader = () => {
   }, [API_THE_LOAI, API_QUOC_GIA]);
 
   const dataRoute = [
-    { name: "Phim mới cập nhật", path: "/phim-moi-cap-nhat" },
+    { name: "Phim mới", path: "/phim-moi-cap-nhat" },
     { name: "Phim lẻ", path: "/danh-sach/phim-le" },
     { name: "Phim bộ", path: "/danh-sach/phim-bo" },
     { name: "Hoạt hình", path: "/danh-sach/hoat-hinh" },
@@ -122,13 +122,13 @@ const AppHeader = () => {
       style={{ transition: "0.3s ease-in-out" }}
     >
       <div className="container">
-        {/* {renderLink("/", <span className="navbar-brand me-auto text-warning fw">VUDO</span>)} */}
+        {/* {renderLink("/", <span className="navbar-brand me-auto text-warning fw">BoyQuang</span>)} */}
         <Link
           onClick={() => setCurrentPath("/")}
           className="navbar-brand me-auto text-warning fw"
           href="/"
         >
-          VUDO
+          PhimMoi
         </Link>
         <div
           className="offcanvas offcanvas-end"
@@ -142,7 +142,7 @@ const AppHeader = () => {
                 className="offcanvas-title text-warning fw"
                 id="offcanvasNavbarLabel"
               >
-                VUDO
+                PhimMoi
               </h5>
             </a>
 
@@ -297,3 +297,4 @@ const AppHeader = () => {
   );
 };
 export default AppHeader;
+
