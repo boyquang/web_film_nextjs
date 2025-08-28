@@ -30,7 +30,7 @@ const Noti = () => {
             <div className="w-100 d-flex justify-content-center">
               <img
                 src="/img/PAY.png"
-                alt="banner - vudevweb.com"
+                alt="banner - boyquang.com"
                 className="rounded"
                 style={{ objectFit: "cover", maxWidth: "200px" }}
               />
@@ -53,4 +53,5 @@ const Noti = () => {
 };
 
 export default Noti;
+
 
