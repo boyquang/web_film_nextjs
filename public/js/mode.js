@@ -1,5 +1,5 @@
 (function () {
-  console.log("%cCode by @vudovn", "color: red; font-size: 40px;");
+  console.log("%cCode by Vudovn", "color: red; font-size: 40px;");
   // Chặn F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U
   // document.addEventListener("keydown", function (event) {
   //   if (
@@ -30,3 +30,4 @@
   //   }
   // }, 1000);
 })();
+
