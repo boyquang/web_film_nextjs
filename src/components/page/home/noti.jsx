@@ -40,8 +40,8 @@ const Noti = () => {
             </p>
             <p className="mt-2">
               👉 Liên hệ telegram &nbsp;
-              <a href="https://t.me/vudevwebChannel" target="_blank">
-                VUDOVN
+              <a href="https://t.me/boyquang" target="_blank">
+                BOYQUANG
               </a>
               &nbsp; để yêu cầu phim! 👈
             </p>
@@ -53,3 +53,4 @@ const Noti = () => {
 };
 
 export default Noti;
+
