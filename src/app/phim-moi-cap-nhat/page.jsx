@@ -19,7 +19,7 @@ const TheLoai = async ({ searchParams }) => {
   const data = await fetchNewMovieUpdate(api, page);
   data.breadCrumb = [
     {
-      name: "Phim mới cập nhật",
+      name: "Phim mới",
       slug: "/phim-moi-cap-nhat",
       isCurrent: false,
       position: 2,
@@ -53,3 +53,4 @@ const TheLoai = async ({ searchParams }) => {
 };
 
 export default TheLoai;
+
