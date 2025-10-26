@@ -27,9 +27,9 @@ const VideoPlayer = ({ episode }) => {
      <iframe
         className="video-iframe rounded"
         title={episode.filename || "Video"}
-        src={episode.link_embed}
+        src={`https://nguon3x.com/player?url=${episode.link_m3u8}`}
         width="100%"
-        height="500px"
+        height="580px"
         frameBorder="0"
         allowFullScreen
       ></iframe>
@@ -155,6 +155,7 @@ const MoviePlayer = ({ initialData, params }) => {
 };
 
 export default MoviePlayer;
+
 
 
 
