@@ -27,6 +27,10 @@ const Info = ({ data }) => {
 
   const MovieInfo = () => (
     <div className="row p-3">
+      <p>
+      <strong>
+        {name}
+      </strong></p>
       <ul className="text-warning col-12 col-md-6">
         {[
           { label: "Tên phim", value: name },
@@ -218,5 +222,6 @@ const Info = ({ data }) => {
 };
 
 export default Info;
+
 
 
