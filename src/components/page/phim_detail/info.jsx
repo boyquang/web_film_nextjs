@@ -168,7 +168,7 @@ const Info = ({ data }) => {
           <img
             loading="lazy"
             src={
-              thumb_url ||
+              poster_url ||
               "https://lh5.googleusercontent.com/proxy/CGWXSjMMd2FLW31MkAwyyg6CTEa5JYhkmoqOjQOmJbdrIKICImHlALT85CBWNPzJ5WdaGavA6OBY9SSO7YMWaQ7om0jHPu8"
             }
             alt={name || "Poster"}
@@ -231,6 +231,7 @@ const Info = ({ data }) => {
 };
 
 export default Info;
+
 
 
 
