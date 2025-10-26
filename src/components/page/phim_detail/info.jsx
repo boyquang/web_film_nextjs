@@ -40,6 +40,7 @@ const Info = ({ data }) => {
           { label: "Trạng thái", value: episode_current },
           { label: "Tổng số tập phim", value: episode_total },
           { label: "Chất lượng", value: quality },
+          { label: "Quốc gia", value: country },
         ].map(({ label, value }) => (
           <li key={label}>
             <p>
@@ -51,7 +52,7 @@ const Info = ({ data }) => {
       </ul>
       <ul className="text-warning col-12 col-md-6">
         {[
-          { label: "Quốc gia", value: country },
+          
           { label: "Ngôn ngữ", value: lang },
           { label: "Đạo diễn", value: director.join(", ") },
           { label: "Diễn viên", value: actor.join(", ") || "N/A" },
@@ -230,6 +231,7 @@ const Info = ({ data }) => {
 };
 
 export default Info;
+
 
 
 
