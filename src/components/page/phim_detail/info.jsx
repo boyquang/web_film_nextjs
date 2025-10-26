@@ -31,6 +31,7 @@ const Info = ({ data }) => {
       <strong>
         {name}
       </strong></p>
+      <h2 class="g1-delta g1-delta-2nd"><span>Thông tin phim</span></h2>
       <ul className="text-warning col-12 col-md-6">
         {[
           { label: "Tên phim", value: name },
@@ -108,6 +109,7 @@ const Info = ({ data }) => {
         role="tabpanel"
         aria-labelledby="ex3-tab-1"
       >
+        
         <MovieInfo />
         <EpisodeList />
       </div>
@@ -117,6 +119,7 @@ const Info = ({ data }) => {
         role="tabpanel"
         aria-labelledby="ex3-tab-2"
       >
+        <h2 class="g1-delta g1-delta-2nd"><span>Nội dung phim</span></h2>
         <div className="p-3">
           <p className="text-warning">
             {content || "Nội dung đang cập nhật..."}
@@ -129,6 +132,7 @@ const Info = ({ data }) => {
         role="tabpanel"
         aria-labelledby="ex3-tab-3"
       >
+        <h2 class="g1-delta g1-delta-2nd"><span>Các tập phim</span></h2>
         <div className="p-3">
           {episodes.map((episode, index) => (
             <div key={index}>
@@ -224,6 +228,7 @@ const Info = ({ data }) => {
 };
 
 export default Info;
+
 
 
 
