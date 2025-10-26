@@ -27,14 +27,13 @@ const Info = ({ data }) => {
 
   const MovieInfo = () => (
     <div className="row p-3">
+      
       <p>
       <strong>
         {name}
       </strong></p>
-      
       <ul className="text-warning col-12 col-md-6">
         {[
-          { label: "Tên phim", value: name },
           { label: "Tên chính thức", value: origin_name },
           { label: "Trạng thái", value: episode_current },
           { label: "Tổng số tập phim", value: episode_total },
@@ -228,6 +227,7 @@ const Info = ({ data }) => {
 };
 
 export default Info;
+
 
 
 
