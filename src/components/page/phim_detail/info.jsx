@@ -79,6 +79,7 @@ const Info = ({ data }) => {
             <Link
               key={i}
               href={`/xem-phim/${movie.slug}/${ep.slug}?server=${index}`}
+              target="_blank"
               className="btn btn-warning me-3"
             >
               Xem ngay
@@ -140,6 +141,7 @@ const Info = ({ data }) => {
                   <Link
                     key={i}
                     href={`/xem-phim/${movie.slug}/${ep.slug}?server=${index}`}
+                    target="_blank"
                   >
                     {ep.name}
                   </Link>
@@ -222,6 +224,7 @@ const Info = ({ data }) => {
 };
 
 export default Info;
+
 
 
 
