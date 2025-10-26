@@ -31,7 +31,7 @@ const Info = ({ data }) => {
       <strong>
         {name}
       </strong></p>
-      <h2 class="g1-delta g1-delta-2nd"><span>Thông tin phim</span></h2>
+      
       <ul className="text-warning col-12 col-md-6">
         {[
           { label: "Tên phim", value: name },
@@ -109,7 +109,7 @@ const Info = ({ data }) => {
         role="tabpanel"
         aria-labelledby="ex3-tab-1"
       >
-        
+        <h2 class="g1-delta g1-delta-2nd"><span>Thông tin phim</span></h2>
         <MovieInfo />
         <EpisodeList />
       </div>
@@ -228,6 +228,7 @@ const Info = ({ data }) => {
 };
 
 export default Info;
+
 
 
 
