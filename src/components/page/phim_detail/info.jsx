@@ -13,7 +13,6 @@ const Info = ({ data }) => {
     origin_name = "Đang cập nhật",
     content = "Đang cập nhật",
     poster_url = "",
-    thumb_url = "",
     trailer_url = "",
     time = "Đang cập nhật",
     episode_current = "Đang cập nhật",
@@ -231,6 +230,7 @@ const Info = ({ data }) => {
 };
 
 export default Info;
+
 
 
 
