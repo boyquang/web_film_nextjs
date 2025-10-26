@@ -13,6 +13,7 @@ const Info = ({ data }) => {
     origin_name = "Đang cập nhật",
     content = "Đang cập nhật",
     poster_url = "",
+    thumb_url = "",
     trailer_url = "",
     time = "Đang cập nhật",
     episode_current = "Đang cập nhật",
@@ -23,6 +24,7 @@ const Info = ({ data }) => {
     director = ["Đang cập nhật"],
     actor = ["Đang cập nhật"],
     year = "Đang cập nhật",
+    country = ["Đang cập nhật"],
   } = movie;
 
   const MovieInfo = () => (
@@ -49,6 +51,7 @@ const Info = ({ data }) => {
       </ul>
       <ul className="text-warning col-12 col-md-6">
         {[
+          { label: "Quốc gia", value: country },
           { label: "Ngôn ngữ", value: lang },
           { label: "Đạo diễn", value: director.join(", ") },
           { label: "Diễn viên", value: actor.join(", ") || "N/A" },
@@ -164,7 +167,7 @@ const Info = ({ data }) => {
           <img
             loading="lazy"
             src={
-              poster_url ||
+              thumb_url ||
               "https://lh5.googleusercontent.com/proxy/CGWXSjMMd2FLW31MkAwyyg6CTEa5JYhkmoqOjQOmJbdrIKICImHlALT85CBWNPzJ5WdaGavA6OBY9SSO7YMWaQ7om0jHPu8"
             }
             alt={name || "Poster"}
@@ -227,6 +230,7 @@ const Info = ({ data }) => {
 };
 
 export default Info;
+
 
 
 
