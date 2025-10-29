@@ -23,6 +23,7 @@ const Info = ({ data }) => {
     director = ["Đang cập nhật"],
     actor = ["Đang cập nhật"],
     year = "Đang cập nhật",
+    quoc_gia = "Đang cập nhật",
   } = movie;
 
   const MovieInfo = () => (
@@ -32,13 +33,14 @@ const Info = ({ data }) => {
       <strong>
         {name}
       </strong></p>
-      <ul className="text-warning col-12 col-md-6">
+      <ul className="text-warning">
         {[
           { label: "Tên chính thức", value: origin_name },
           { label: "Trạng thái", value: episode_current },
           { label: "Tổng số tập phim", value: episode_total },
           { label: "Chất lượng", value: quality },
           { label: "Năm", value: year },
+          { label: "Quốc gia", value: quoc_gia },
         ].map(({ label, value }) => (
           <li key={label}>
             <p>
@@ -47,8 +49,6 @@ const Info = ({ data }) => {
             </p>
           </li>
         ))}
-      </ul>
-      <ul className="text-warning col-12 col-md-6">
         {[
           
           { label: "Ngôn ngữ", value: lang },
@@ -229,6 +229,7 @@ const Info = ({ data }) => {
 };
 
 export default Info;
+
 
 
 
