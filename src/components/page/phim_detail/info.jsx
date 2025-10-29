@@ -66,7 +66,7 @@ const Info = ({ data }) => {
         </React.Fragment>
       ))
     : "N/A"
-}
+},
           { label: "Thời lượng", value: time },
           {
             label: "Ngày đăng",
@@ -242,6 +242,7 @@ const Info = ({ data }) => {
 };
 
 export default Info;
+
 
 
 
