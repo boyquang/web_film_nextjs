@@ -59,7 +59,7 @@ const Info = ({ data }) => {
   value: actor.length
     ? actor.map((name, i) => (
         <React.Fragment key={i}>
-          <a href={`/tag/${name}`} target="_blank" class="tag-dv">
+          <a className="tag-dv">
             {name}
           </a>
           {i < actor.length - 1 && ", "}
@@ -242,6 +242,7 @@ const Info = ({ data }) => {
 };
 
 export default Info;
+
 
 
 
