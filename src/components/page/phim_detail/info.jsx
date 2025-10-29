@@ -53,7 +53,20 @@ const Info = ({ data }) => {
           
           { label: "Ngôn ngữ", value: lang },
           { label: "Đạo diễn", value: director.join(", ") },
-          { label: "Diễn viên", value: actor.join(", ") || "N/A" },
+          /* { label: "Diễn viên", value: actor.join(", ") || "N/A" }, */
+          {
+  label: "Diễn viên",
+  value: actor.length
+    ? actor.map((name, i) => (
+        <React.Fragment key={i}>
+          <a href={`/tag/${name}`} target="_blank" class="tag-dv">
+            {name}
+          </a>
+          {i < actor.length - 1 && ", "}
+        </React.Fragment>
+      ))
+    : "N/A"
+}
           { label: "Thời lượng", value: time },
           {
             label: "Ngày đăng",
@@ -229,6 +242,7 @@ const Info = ({ data }) => {
 };
 
 export default Info;
+
 
 
 
