@@ -19,7 +19,7 @@ const VideoPlayer = ({ episode }) => {
     <div>
       <div className="text-warning fw mb-2 fadeIn">
         <strong>
-          <i className="fe fe-hash"></i>
+          <a>Bạn đang xem </a><i className="fe fe-hash"></i>
           {episode.name}
         </strong>
       </div>
@@ -66,12 +66,7 @@ const MoviePlayer = ({ initialData, params }) => {
           </Link>
         </li>
         <li className="breadcrumb-item">
-          <Link
-            href={`/phim/${movieData.movie.slug}`}
-            className="text-warning fw"
-          >
             {movieData.movie.name}
-          </Link>
         </li>
         <li className="breadcrumb-item active" aria-current="page">
           {currentEpisode?.name || "Tập phim"}
@@ -129,7 +124,7 @@ const MoviePlayer = ({ initialData, params }) => {
 
           <hr />
 
-          <div className="mb-4">
+          {/* <div className="mb-4">
             <div className="text-warning fw mb-2">
               <strong>
                 <i className="fe fe-hash"></i>Các tập phim
@@ -138,7 +133,7 @@ const MoviePlayer = ({ initialData, params }) => {
             <EpisodeList />
           </div>
 
-          <hr />
+          <hr /> */}
 
           <div className="mb-4">
             <div className="text-warning fw mb-2">
@@ -155,6 +150,7 @@ const MoviePlayer = ({ initialData, params }) => {
 };
 
 export default MoviePlayer;
+
 
 
 
