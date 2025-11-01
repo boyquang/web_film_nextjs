@@ -50,10 +50,19 @@ const Info = ({ data }) => {
           </li>
         ))}
         {[
-          
-          { label: "Ngôn ngữ", value: lang },
           { label: "Đạo diễn", value: director.join(", ") },
           { label: "Diễn viên", value: actor.join(", ") || "N/A" }, 
+        ].map(({ label, value }) => (
+          <li key={label}>
+            <p>
+              <strong>{label}: </strong>
+              <a className="blogfilm">{value}</a>
+            </p>
+          </li>
+        ))}
+        {[
+          
+          { label: "Ngôn ngữ", value: lang },
           { label: "Thời lượng", value: time },
           {
             label: "Ngày đăng",
@@ -229,6 +238,7 @@ const Info = ({ data }) => {
 };
 
 export default Info;
+
 
 
 
