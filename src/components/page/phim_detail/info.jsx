@@ -142,7 +142,7 @@ const Info = ({ data }) => {
         role="tabpanel"
         aria-labelledby="ex3-tab-3"
       >
-        <h2 class="g1-delta g1-delta-2nd"><span>Các tập phim</span></h2>
+        <h2 class="g1-delta g1-delta-2nd"><span>Xem các tập phim</span></h2>
         <div className="p-3">
           {episodes.map((episode, index) => (
             <div key={index}>
@@ -238,6 +238,7 @@ const Info = ({ data }) => {
 };
 
 export default Info;
+
 
 
 
