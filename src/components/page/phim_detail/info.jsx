@@ -41,8 +41,6 @@ const Info = ({ data }) => {
           { label: "Tổng số tập phim", value: episode_total },
           { label: "Chất lượng", value: quality },
           { label: "Năm", value: year },
-          { label: "Thể loại", value: category.join(", ") },
-          { label: "Quốc gia", value: country.join(", ") },
         ].map(({ label, value }) => (
           <li key={label}>
             <p>
@@ -240,6 +238,7 @@ const Info = ({ data }) => {
 };
 
 export default Info;
+
 
 
 
