@@ -24,6 +24,7 @@ const Info = ({ data }) => {
     actor = ["Đang cập nhật"],
     year = "Đang cập nhật",
     countries = ["Đang cập nhật"],
+    category = ["Đang cập nhật"],
   } = movie;
 
   const MovieInfo = () => (
@@ -40,6 +41,7 @@ const Info = ({ data }) => {
           { label: "Tổng số tập phim", value: episode_total },
           { label: "Chất lượng", value: quality },
           { label: "Năm", value: year },
+          { label: "Thể loại", value: category.join(", ") },
           { label: "Quốc gia", value: countries.join(", ") },
         ].map(({ label, value }) => (
           <li key={label}>
@@ -238,6 +240,7 @@ const Info = ({ data }) => {
 };
 
 export default Info;
+
 
 
 
