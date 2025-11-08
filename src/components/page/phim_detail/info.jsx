@@ -83,7 +83,7 @@ const Info = ({ data }) => {
   );
 
   const EpisodeList = () => (
-
+<div className="noi-xemphim">
       {episodes.map((episode, index) => (
         <div key={index} className="text-center mt-3">
           {episode.server_data.slice(0, 1).map((ep, i) => (
@@ -108,7 +108,7 @@ const Info = ({ data }) => {
           )}
         </div>
       ))}
-
+</div>
   );
 
   const TabContent = () => (
@@ -238,6 +238,7 @@ const Info = ({ data }) => {
 };
 
 export default Info;
+
 
 
 
