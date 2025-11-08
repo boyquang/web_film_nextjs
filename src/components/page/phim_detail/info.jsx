@@ -23,8 +23,8 @@ const Info = ({ data }) => {
     director = ["Đang cập nhật"],
     actor = ["Đang cập nhật"],
     year = "Đang cập nhật",
-    countries = ["Đang cập nhật"],
-    TheLoai = ["Đang cập nhật"],
+    country = ["Đang cập nhật"],
+    category = ["Đang cập nhật"],
   } = movie;
 
   const MovieInfo = () => (
@@ -41,8 +41,8 @@ const Info = ({ data }) => {
           { label: "Tổng số tập phim", value: episode_total },
           { label: "Chất lượng", value: quality },
           { label: "Năm", value: year },
-          { label: "Thể loại", value: TheLoai.join(", ") },
-          { label: "Quốc gia", value: countries.join(", ") },
+          { label: "Thể loại", value: category.join(", ") },
+          { label: "Quốc gia", value: country.join(", ") },
         ].map(({ label, value }) => (
           <li key={label}>
             <p>
@@ -240,6 +240,7 @@ const Info = ({ data }) => {
 };
 
 export default Info;
+
 
 
 
